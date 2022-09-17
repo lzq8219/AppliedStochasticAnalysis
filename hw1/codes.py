@@ -9,7 +9,7 @@ olist=np.array([])
 
 for n in nlist:
     d=0
-    for k in range(100):
+    for k in range(1000):
         x=np.random.rand(n)
         y=np.sin(x)
         i=sum(y)/n
@@ -18,5 +18,6 @@ for n in nlist:
 
 olist=np.log(dlist[0:-1]/dlist[1:])/np.log(nlist[1:]/nlist[0:-1])
 print('order:',olist)
+print('error',dlist)
 
 
